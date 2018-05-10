@@ -1,0 +1,19 @@
+{
+  "name": "mern_setup",
+  "version": "1.0.0",
+  "description": "Example of Mern stack Setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanhpham327/mern-setup.git"
+  },
+  "author": "Hanh Pham",
+  "license": "ISC",
+  "homepage": "https://github.com/hanhpham327/mern-setup.git",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
