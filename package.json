@@ -4,6 +4,10 @@
   "description": "Example of Mern stack Setup",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:server": "nodemon index.js",
+    "dev:client": "npm start --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,6 +18,12 @@
   "license": "ISC",
   "homepage": "https://github.com/hanhpham327/mern-setup.git",
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4",
+    "npm": "^6.0.1",
+    "npm-run-all": "^4.1.3"
   }
 }

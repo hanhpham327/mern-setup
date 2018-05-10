@@ -1,8 +1,20 @@
 const express = require('express');
+const cors = require('cors');
 const PORT = process.envPORT || 9000;
 const app=express();
+
+app.use(cors());
+
+app.get('/user-data',(req,res)=>{
+    const user={
+        name:'Jim Bob',
+        email:'jimthebob@mail.com'
+    }
+    res.send(user);
+});
+
 app.get('/', (req,res) =>{
-    res.send('<h1> App is working!! </h1>')
+    res.send('<h1> HOT POCKETS </h1>')
 })
 
 app.listen (PORT, ()=> {
